@@ -1,0 +1,46 @@
+.stars {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+}
+
+.star {
+  position: absolute;
+  border-radius: 50%;
+  animation: twinkle var(--duration) infinite both;
+}
+
+@keyframes twinkle {
+  0% {
+    opacity: 0.2;
+    transform: scale(0.7);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0.2;
+    transform: scale(0.7);
+  }
+}
+
+.dark .star {
+  background-color: rgba(139, 92, 246, 0.7);
+  box-shadow: 0 0 10px rgba(139, 92, 246, 0.5);
+}
+
+.connection {
+  position: absolute;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--connection-color), transparent);
+  transform-origin: left;
+  opacity: var(--connection-opacity);
+}
+
+.dark .connection {
+  --connection-color: rgba(139, 92, 246, 0.3);
+} 
