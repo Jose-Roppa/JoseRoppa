@@ -25,7 +25,7 @@ Siga os passos abaixo para executar o projeto em seu ambiente local:
 
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/seu-usuario/artistic-exploration.git
+   git clone https://github.com/Jose-Roppa/JoseRoppa
    cd artistic-exploration
    ```
 
